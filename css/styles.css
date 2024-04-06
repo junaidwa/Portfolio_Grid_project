@@ -339,7 +339,7 @@ Hero
   background: var(--clr-primary-10);
 }
 .hero-center{
-  min-height: calc(100vh - 5rem);
+  min-height: calc(100vh - 0rem);
   display: grid;
   place-items: center;
 }
@@ -352,7 +352,35 @@ Hero
 .hero-btn{
   margin-top: 1.25rem;
 }
+@media screen and (min-width:992px) {
+  .hero-img{
+    display: block;
+    position: relative;
+    
+  }
+  .hero-center{
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-photo{
+    max-width: 25rem;
+    max-height: 30rem;
+    object-fit: cover;
+    border-radius: var(--radius);
+    position: relative;
+  }
+  .hero-img::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 0.25rem solid var(--clr-primary-5);
+    top: 1.5rem;
+    right: -1.5rem;
+    border-radius: var(--radius);
 
+  }
+  
+}
 
 /*
 =============== 
