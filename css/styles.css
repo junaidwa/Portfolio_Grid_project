@@ -651,12 +651,79 @@ Connect
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 
 }
+@media screen and (min-width:600px) {
+  .video-banner{
+   width: 40%;
+   height: 50%;
+  }
+  
+}
 
 /*
 =============== 
 Skills
 ===============
 */
+@media screen and (min-width:768px){
+  .skills-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }}
+  .skills{
+    background-color: var(--clr-primary-9);
+  
+  }
+  .skills h3{
+    margin: 1.5rem 0;
+    color: var(--clr-primary-1);
+  }
+  .skill{
+    margin-bottom: 1.25rem;
+    text-align: start;
+  }
+  .skill-heading{
+    text-align: start;
+  }
+  .skill p{
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    color: var(--clr-primary-1);
+  }
+  .skill-container{
+    background-color: var(--clr-white);
+    height: 1rem;
+    width: 100%;
+    border-radius: var(--radius);
+    position: relative;
+  }
+  .skill-value{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--clr-primary-5);
+    height: 100%;
+    width: 50%;
+  }
+  .value-70{
+    width: 70%;
+  }
+  .value-80{
+    width: 90%;
+  }
+  .skill-text{
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+  transform: translate(-50%,50%);
+  }
+  .skill-text-70{
+    left: 70%;
+  }
+  .skill-text-80{
+    left: 90%;
+  }
+
 /*
 =============== 
 Timeline
