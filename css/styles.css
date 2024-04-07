@@ -531,8 +531,6 @@ Projects
   border-radius: var(--radius);
   transition: var(--transition);
   opacity: 0;
-
-  border-color: var(--clr-primary-5);
 }
 .projecte:hover::after{
   opacity: 1;
@@ -552,8 +550,41 @@ Projects
     grid-template-columns: 1fr 1fr 1fr;
    
   }
-  
 }
+  
+@media screen and (min-width:1170px){
+  .projects-center{
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-rows: 250px 250px ;
+    gap: 1rem;
+    grid-template-areas: 
+    "a b b"
+    "a c d"
+    ;
+  
+  }
+  .project-img{
+    height: 100%;
+  }
+  .project{
+    height: 100%;
+  }
+
+.project-1{
+  grid-area: a;
+}
+.project-2{
+  grid-area: b;
+}
+.project-3{
+  grid-area: c;
+}
+.project-4{
+  grid-area: d;
+}
+}
+
+
 /*
 =============== 
 Connect
